@@ -4,7 +4,7 @@
 目录：
 > appname/serializers.py
 
-'
+```
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 
@@ -19,7 +19,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
-'
+```
 #  2.在app目录下的views.py输入以下代码：
  目录：
   > appname/views.py
